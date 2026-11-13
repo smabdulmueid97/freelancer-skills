@@ -1,8 +1,8 @@
 # freelancer-skills
 
-Claude Code skills for solo freelancers — the money work, the posting work, and the video work, not the code work.
+Claude Code skills for solo freelancers — the money work, not the code work.
 
-**Invoice, quote, track expenses, chase late payments, close the month, post to 7 platforms, and turn long videos into shorts — from a plain-English prompt, with no API key, no backend, no signup.**
+**Invoice, quote, track expenses, chase late payments, close the month — from a plain-English prompt, with no API key, no backend, no signup.**
 
 Try it in 10 seconds, no Claude needed: open [`demo/index.html`](demo/index.html) — or live at https://smabdulmueid97.github.io/freelancer-skills/ once Pages is on — type a client + amount, print to PDF.
 
@@ -26,10 +26,13 @@ The gap: every trending skill pack is for developers, traders, or SEO. None cove
 | `expense-tracker` | "log $45 for Figma, client Acme" | Logs an expense, categorises it, keeps a running monthly total per client / category |
 | `payment-followup` | "chase the unpaid invoice #104" | Writes a polite 1st / 2nd / final reminder — firm, not rude — with the exact amount, due date and payment link |
 | `monthly-summary` | "close October" | Totals invoiced, paid, outstanding, expenses and profit for the month, per client, with the top 3 overdue invoices |
-| `social-media-posting` | "post this to TikTok, Reels and LinkedIn" | Turns one idea into platform-ready posts for YouTube, Instagram, Facebook, TikTok, Bilibili, LinkedIn, and X — own hook, length, and hashtags per platform |
-| `long-to-short-video` | "turn this 40-min tutorial into 5 shorts" | Finds the best moments, writes hooks + captions, and cuts vertical 9:16 clips with ffmpeg — one master clip, per-platform cuts for X, LinkedIn, and Bilibili |
 
-Each skill is one `SKILL.md` — read it, copy the folder, done. No dependencies (the video skill's cutter needs only ffmpeg).
+## Related repos (separate projects)
+
+- [social-media-posting](https://github.com/smabdulmueid97/social-media-posting)
+- [long-to-short-video](https://github.com/smabdulmueid97/long-to-short-video)
+
+Each skill is one `SKILL.md` — read it, copy the folder, done. No dependencies.
 
 ## Install (30 seconds)
 
@@ -49,8 +52,6 @@ quote $900 for a landing page, 2 revisions, valid 14 days
 log $29 for hosting, client Bright Studio
 chase invoice #INV-1042, it's 12 days overdue
 close October
-post this launch to YouTube, Instagram, TikTok, Bilibili, LinkedIn and X
-turn this 40-minute tutorial into 5 shorts for Shorts, Reels and TikTok
 ```
 
 ## No-Claude demo
@@ -72,13 +73,8 @@ skills/
   expense-tracker/SKILL.md
   payment-followup/SKILL.md
   monthly-summary/SKILL.md
-  social-media-posting/SKILL.md
-  social-media-posting/templates/post-brief.md
-  long-to-short-video/SKILL.md
-  long-to-short-video/templates/clip-plan.md
-  long-to-short-video/scripts/make-clips.sh   # ffmpeg cutter, clips.csv in, 9:16 clips out
-demo/index.html          # single-file invoice generator, no build step
-scripts/install.sh       # copies skills to ~/.claude/skills/
+demo/index.html              # single-file invoice generator, no build step
+scripts/install.sh           # copies skills to ~/.claude/skills/
 ```
 
 ## Rules every skill follows
