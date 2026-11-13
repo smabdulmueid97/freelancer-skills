@@ -2,7 +2,7 @@
 
 Claude Code skills for solo freelancers — the money work, not the code work.
 
-**Invoice, quote, track expenses, chase late payments, close the month — from a plain-English prompt, with no API key, no backend, no signup.**
+**Invoice, quote, track expenses, chase late payments, and close the month — from a plain-English prompt, with no API key, no backend, no signup.**
 
 Try it in 10 seconds, no Claude needed: open [`demo/index.html`](demo/index.html) — or live at https://smabdulmueid97.github.io/freelancer-skills/ once Pages is on — type a client + amount, print to PDF.
 
@@ -27,12 +27,12 @@ The gap: every trending skill pack is for developers, traders, or SEO. None cove
 | `payment-followup` | "chase the unpaid invoice #104" | Writes a polite 1st / 2nd / final reminder — firm, not rude — with the exact amount, due date and payment link |
 | `monthly-summary` | "close October" | Totals invoiced, paid, outstanding, expenses and profit for the month, per client, with the top 3 overdue invoices |
 
+Each skill is one `SKILL.md` — read it, copy the folder, done. No dependencies.
+
 ## Related repos (separate projects)
 
-- [social-media-posting](https://github.com/smabdulmueid97/social-media-posting)
-- [long-to-short-video](https://github.com/smabdulmueid97/long-to-short-video)
-
-Each skill is one `SKILL.md` — read it, copy the folder, done. No dependencies.
+- [social-media-posting](https://github.com/smabdulmueid97/social-media-posting) — one idea into posts for YouTube, Instagram, Facebook, TikTok, Bilibili, LinkedIn, and X
+- [long-to-short-video](https://github.com/smabdulmueid97/long-to-short-video) — turn a long video into short vertical clips, with an ffmpeg cutter
 
 ## Install (30 seconds)
 
@@ -73,8 +73,8 @@ skills/
   expense-tracker/SKILL.md
   payment-followup/SKILL.md
   monthly-summary/SKILL.md
-demo/index.html              # single-file invoice generator, no build step
-scripts/install.sh           # copies skills to ~/.claude/skills/
+demo/index.html          # single-file invoice generator, no build step
+scripts/install.sh       # copies skills to ~/.claude/skills/
 ```
 
 ## Rules every skill follows
