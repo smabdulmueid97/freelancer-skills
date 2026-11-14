@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="freelancer-skills — the money work, not the code work">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EDE9FE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <circle cx="1050" cy="60" r="90" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="110" cy="300" r="70" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="980" cy="300" r="40" fill="#FFFFFF" opacity="0.10"/>
+  <text x="60" y="90" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="bold" fill="#FFFFFF">freelancer-skills</text>
+  <text x="60" y="135" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#DDD6FE">The money work, not the code work.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="60" y="170" width="170" height="54" rx="27" fill="#FFFFFF"/>
+    <text x="145" y="205" font-size="22" font-weight="bold" fill="#5B21B6" text-anchor="middle">5 skills</text>
+    <rect x="250" y="170" width="220" height="54" rx="27" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="360" y="205" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">No API key</text>
+    <rect x="490" y="170" width="220" height="54" rx="27" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="600" y="205" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">No backend</text>
+  </g>
+  <g>
+    <rect x="760" y="150" width="380" height="130" rx="16" fill="url(#card)"/>
+    <text x="790" y="190" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#5B21B6">“invoice Acme for $800”</text>
+    <text x="790" y="220" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#444444">Invoice  •  Quote  •  Expenses</text>
+    <text x="790" y="252" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#444444">Late payments  •  Month-end summary</text>
+  </g>
+  <text x="60" y="320" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#C7D2FE">Invoice, quote, track expenses, chase late payments, close the month — in plain English</text>
+</svg>
