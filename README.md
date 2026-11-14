@@ -1,23 +1,43 @@
-# freelancer-skills
+<p align="center">
+  <img src="assets/banner.svg" alt="freelancer-skills — the money work, not the code work" width="100%" />
+</p>
 
-Claude Code skills for solo freelancers — the money work, not the code work.
+<p align="center">
+  <a href="https://github.com/smabdulmueid97/freelancer-skills/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/smabdulmueid97/freelancer-skills?style=flat-square" /></a>
+  <a href="https://github.com/smabdulmueid97/freelancer-skills"><img alt="Claude Code skills" src="https://img.shields.io/badge/Claude_Code-5_skills-blueviolet?style=flat-square" /></a>
+  <a href="https://smabdulmueid97.github.io/freelancer-skills/demo/"><img alt="Live demo" src="https://img.shields.io/badge/demo-live-brightgreen?style=flat-square" /></a>
+  <a href="https://github.com/smabdulmueid97/freelancer-skills/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/smabdulmueid97/freelancer-skills?style=flat-square" /></a>
+</p>
 
-**Invoice, quote, track expenses, chase late payments, and close the month — from a plain-English prompt, with no API key, no backend, no signup.**
+<h1 align="center">freelancer-skills</h1>
 
-Try it in 10 seconds, no Claude needed: open [`demo/index.html`](demo/index.html) — or live at https://smabdulmueid97.github.io/freelancer-skills/ once Pages is on — type a client + amount, print to PDF.
+<p align="center">
+  Claude Code skills for solo freelancers — <b>the money work, not the code work</b>.<br />
+  Invoice, quote, track expenses, chase late payments, and close the month — from a plain-English prompt, with <b>no API key, no backend, no signup</b>.
+</p>
+
+<p align="center">
+  <a href="#-skills-included">Skills</a> •
+  <a href="#-install-30-seconds">Install</a> •
+  <a href="#-no-claude-demo">Demo</a> •
+  <a href="#-related-repos">Related repos</a> •
+  <a href="#-layout">Layout</a>
+</p>
+
+---
 
 ## Why this exists
 
-Checked GitHub Trending on 2026-11-14 (daily + weekly + monthly, ~50 repos). The pattern was impossible to miss:
+Every trending skill pack is for developers, traders, or SEO. None covers the daily money workflow of a freelancer — invoicing, quotes, expenses, late-payment follow-ups. That's this repo.
 
-1. **Agent skills are the #1 trending category.** `anthropics/skills`, `addyosmani/agent-skills`, `mattpocock/skills`, `claude-trading-skills`, `cloudflare/security-audit-skill`, `taste-skill`, `claude-mem` — 12+ of the top 50 are Claude Code skills / plugins.
-2. **Dev tools + security review are next.** `alibaba/open-code-review`, `openai/codex-security`, `chrome-devtools-mcp`, `modern-web-guidance-src`.
-3. **Money workflows trend too.** `daily_stock_analysis`, `claude-trading-skills`, `sure` (personal finance).
-4. **Self-hosted, zero-setup, try-it-in-browser wins.** `uptime-kuma`, `agent-browser`, `lobehub` — people star what they can use immediately.
+```mermaid
+flowchart LR
+    A[Plain-English prompt] --> B[Skill reads SKILL.md]
+    B --> C[Markdown + HTML output]
+    C --> D[You review + send]
+```
 
-The gap: every trending skill pack is for developers, traders, or SEO. None covers the daily money workflow of a freelancer — invoicing, quotes, expenses, late-payment follow-ups. That's this repo.
-
-## Skills included
+## 📋 Skills included
 
 | Skill | Trigger | What it does |
 |---|---|---|
@@ -29,12 +49,7 @@ The gap: every trending skill pack is for developers, traders, or SEO. None cove
 
 Each skill is one `SKILL.md` — read it, copy the folder, done. No dependencies.
 
-## Related repos (separate projects)
-
-- [social-media-posting](https://github.com/smabdulmueid97/social-media-posting) — one idea into posts for YouTube, Instagram, Facebook, TikTok, Bilibili, LinkedIn, and X
-- [long-to-short-video](https://github.com/smabdulmueid97/long-to-short-video) — turn a long video into short vertical clips, with an ffmpeg cutter
-
-## Install (30 seconds)
+## 🚀 Install (30 seconds)
 
 ```bash
 git clone https://github.com/smabdulmueid97/freelancer-skills.git
@@ -54,17 +69,23 @@ chase invoice #INV-1042, it's 12 days overdue
 close October
 ```
 
-## No-Claude demo
+## 🧪 No-Claude demo
 
-`demo/index.html` is a single-file invoice generator (the same logic as the `invoice` skill, in the browser):
+Try it in 10 seconds, no Claude needed: **[live demo](https://smabdulmueid97.github.io/freelancer-skills/demo/)** — or open `demo/index.html` locally. Type a client + amount, print to PDF.
+
+The demo is a single-file invoice generator (the same logic as the `invoice` skill, in the browser):
 
 - Add line items, tax / VAT, discount, multi-currency (USD, EUR, GBP, BDT, INR)
 - Auto invoice number + due date, saves to localStorage — nothing leaves your browser
 - Print / Save as PDF
 
-Open the file locally, or use the GitHub Pages link above.
+## 🔗 Related repos (separate projects)
 
-## Repo layout
+- [social-media-posting](https://github.com/smabdulmueid97/social-media-posting) — one idea into posts for YouTube, Instagram, Facebook, TikTok, Bilibili, LinkedIn, and X
+- [long-to-short-video](https://github.com/smabdulmueid97/long-to-short-video) — turn a long video into short vertical clips, with an ffmpeg cutter
+- [linkedin-comment-skill](https://github.com/smabdulmueid97/linkedin-comment-skill) — draft thoughtful LinkedIn comments on recent posts, draft-only by default
+
+## 🗂️ Layout
 
 ```
 skills/
@@ -77,7 +98,7 @@ demo/index.html          # single-file invoice generator, no build step
 scripts/install.sh       # copies skills to ~/.claude/skills/
 ```
 
-## Rules every skill follows
+## 📏 Rules every skill follows
 
 - Never invent a client, amount, date or rate. Ask if it's missing.
 - Money is always shown with currency + 2 decimals. Totals are recomputed, never copied from the prompt.
