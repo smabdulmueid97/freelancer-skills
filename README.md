@@ -1,57 +1,59 @@
-<div align="center">
+<p align="center">
+  <img src="assets/banner.svg" alt="freelancer-skills — the money work, not the code work" width="100%" />
+</p>
 
-# freelancer-skills
+<p align="center">
+  <b>🚀 Try the live demo — <a href="https://smabdulmueid97.github.io/freelancer-skills/demo/">See it in action</a></b>
+</p>
 
-**Claude Code skills for solo freelancers — the money work, not the code work.**
+<p align="center">
+  <a href="https://github.com/smabdulmueid97/freelancer-skills/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/smabdulmueid97/freelancer-skills?style=flat-square" /></a>
+  <a href="https://github.com/smabdulmueid97/freelancer-skills"><img alt="Claude Code skills" src="https://img.shields.io/badge/Claude_Code-5_skills-blueviolet?style=flat-square" /></a>
+  <a href="https://smabdulmueid97.github.io/freelancer-skills/demo/"><img alt="Live demo" src="https://img.shields.io/badge/demo-live-brightgreen?style=flat-square" /></a>
+  <a href="https://github.com/smabdulmueid97/freelancer-skills/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/smabdulmueid97/freelancer-skills?style=flat-square" /></a>
+</p>
 
-Invoice, quote, track expenses, chase late payments, and close the month — from a plain-English prompt. No API key, no backend, no signup.
+<h1 align="center">freelancer-skills</h1>
 
-[![License: MIT](https://img.shields.io/github/license/smabdulmueid97/freelancer-skills?style=flat-square)](https://github.com/smabdulmueid97/freelancer-skills/blob/main/LICENSE)
-[![Stars](https://img.shields.io/github/stars/smabdulmueid97/freelancer-skills?style=flat-square)](https://github.com/smabdulmueid97/freelancer-skills/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/smabdulmueid97/freelancer-skills?style=flat-square)](https://github.com/smabdulmueid97/freelancer-skills/commits/main)
+<p align="center">
+  Claude Code skills for solo freelancers — <b>the money work, not the code work</b>.<br />
+  Invoice, quote, track expenses, chase late payments, and close the month — from a plain-English prompt, with <b>no API key, no backend, no signup</b>.
+</p>
 
-**[▶ Try it in 10 seconds — live demo](https://smabdulmueid97.github.io/freelancer-skills/)**
-
-No Claude needed: type a client + amount, print to PDF. Nothing leaves your browser.
-
-</div>
+<p align="center">
+  <a href="#-skills-included">Skills</a> •
+  <a href="#-install-30-seconds">Install</a> •
+  <a href="#-no-claude-demo">Demo</a> •
+  <a href="#-related-repos">Related repos</a> •
+  <a href="#-layout">Layout</a>
+</p>
 
 ---
 
-## Screenshots
+## Why this exists
 
-| Mobile | Desktop |
-|---|---|
-| ![Mobile](demo/screenshot-mobile.png) | ![Desktop](demo/screenshot-desktop.png) |
+Every trending skill pack is for developers, traders, or SEO. None covers the daily money workflow of a freelancer — invoicing, quotes, expenses, late-payment follow-ups. That's this repo.
 
-> Tested at 360 / 768 / 1280 px — no horizontal overflow, no clipped buttons.
+```mermaid
+flowchart LR
+    A[Plain-English prompt] --> B[Skill reads SKILL.md]
+    B --> C[Markdown + HTML output]
+    C --> D[You review + send]
+```
 
----
-
-## What it does
+## 📋 Skills included
 
 | Skill | Trigger | What it does |
 |---|---|---|
-| `invoice` | "invoice Acme for $800 for the website" | Professional invoice — numbered, dated, due date, tax/VAT, multi-currency — as Markdown + printable HTML/PDF |
-| `quote` | "quote $1,200 for a logo + 2 revisions" | Fixed-price quote with scope, exclusions, 14-day validity, payment terms |
-| `expense-tracker` | "log $45 for Figma, client Acme" | Logs an expense, categorises it, running monthly total per client / category |
-| `payment-followup` | "chase the unpaid invoice #104" | Polite 1st / 2nd / final reminder — firm, not rude — with exact amount, due date, payment link |
+| `invoice` | "invoice Acme for $800 for the website" | Builds a professional invoice (numbered, dated, due date, tax/VAT, multi-currency), as Markdown + printable HTML/PDF |
+| `quote` | "quote $1,200 for a logo + 2 revisions" | Builds a fixed-price quote / estimate with scope, exclusions, validity (14 days), payment terms |
+| `expense-tracker` | "log $45 for Figma, client Acme" | Logs an expense, categorises it, keeps a running monthly total per client / category |
+| `payment-followup` | "chase the unpaid invoice #104" | Writes a polite 1st / 2nd / final reminder — firm, not rude — with the exact amount, due date and payment link |
 | `monthly-summary` | "close October" | Totals invoiced, paid, outstanding, expenses and profit for the month, per client, with the top 3 overdue invoices |
 
 Each skill is one `SKILL.md` — read it, copy the folder, done. No dependencies.
 
-## Why this exists
-
-Checked GitHub Trending on 2026-11-14 (daily + weekly + monthly, ~50 repos). The pattern was impossible to miss:
-
-1. **Agent skills are the #1 trending category.** `anthropics/skills`, `addyosmani/agent-skills`, `mattpocock/skills`, `claude-trading-skills`, `cloudflare/security-audit-skill`, `taste-skill`, `claude-mem` — 12+ of the top 50 are Claude Code skills / plugins.
-2. **Dev tools + security review are next.** `alibaba/open-code-review`, `openai/codex-security`, `chrome-devtools-mcp`.
-3. **Money workflows trend too.** `daily_stock_analysis`, `claude-trading-skills`, `sure` (personal finance).
-4. **Self-hosted, zero-setup, try-it-in-browser wins.** `uptime-kuma`, `agent-browser`, `lobehub` — people star what they can use immediately.
-
-The gap: every trending skill pack is for developers, traders, or SEO. None covers the daily money workflow of a freelancer — invoicing, quotes, expenses, late-payment follow-ups. That's this repo.
-
-## Install — 30 seconds
+## 🚀 Install (30 seconds)
 
 ```bash
 git clone https://github.com/smabdulmueid97/freelancer-skills.git
@@ -60,8 +62,6 @@ git clone https://github.com/smabdulmueid97/freelancer-skills.git
 ```
 
 Or manually: copy any `skills/<name>/` folder into `~/.claude/skills/<name>/`.
-
-## Use it
 
 Then in Claude Code, just talk normally:
 
@@ -73,24 +73,23 @@ chase invoice #INV-1042, it's 12 days overdue
 close October
 ```
 
-## No-Claude demo
+## 🧪 No-Claude demo
 
-`demo/index.html` is a single-file invoice generator (the same logic as the `invoice` skill, in the browser):
+Try it in 10 seconds, no Claude needed: **[live demo](https://smabdulmueid97.github.io/freelancer-skills/demo/)** — or open `demo/index.html` locally. Type a client + amount, print to PDF.
+
+The demo is a single-file invoice generator (the same logic as the `invoice` skill, in the browser):
 
 - Add line items, tax / VAT, discount, multi-currency (USD, EUR, GBP, BDT, INR)
 - Auto invoice number + due date, saves to localStorage — nothing leaves your browser
 - Print / Save as PDF
 
-Open the file locally, or use the [live demo](https://smabdulmueid97.github.io/freelancer-skills/).
+## 🔗 Related repos (separate projects)
 
-## Rules every skill follows
+- [social-media-posting](https://github.com/smabdulmueid97/social-media-posting) — one idea into posts for YouTube, Instagram, Facebook, TikTok, Bilibili, LinkedIn, and X
+- [long-to-short-video](https://github.com/smabdulmueid97/long-to-short-video) — turn a long video into short vertical clips, with an ffmpeg cutter
+- [linkedin-comment-skill](https://github.com/smabdulmueid97/linkedin-comment-skill) — draft thoughtful LinkedIn comments on recent posts, draft-only by default
 
-- Never invent a client, amount, date or rate. Ask if it's missing.
-- Money is always shown with currency + 2 decimals. Totals are recomputed, never copied from the prompt.
-- Dates are ISO (`2026-11-14`), due date defaults to +14 days unless told otherwise.
-- Output is Markdown first, HTML/PDF second. No external services.
-
-## Repo layout
+## 🗂️ Layout
 
 ```
 skills/
@@ -103,11 +102,12 @@ demo/index.html          # single-file invoice generator, no build step
 scripts/install.sh       # copies skills to ~/.claude/skills/
 ```
 
-## Related repos
+## 📏 Rules every skill follows
 
-- [social-media-posting](https://github.com/smabdulmueid97/social-media-posting) — one idea into posts for YouTube, Instagram, Facebook, TikTok, Bilibili, LinkedIn, and X
-- [long-to-short-video](https://github.com/smabdulmueid97/long-to-short-video) — turn a long video into short vertical clips, with an ffmpeg cutter
-- [invoice-generator](https://github.com/smabdulmueid97/invoice-generator) — free browser invoice generator, print to PDF
+- Never invent a client, amount, date or rate. Ask if it's missing.
+- Money is always shown with currency + 2 decimals. Totals are recomputed, never copied from the prompt.
+- Dates are ISO (`2026-11-14`), due date defaults to +14 days unless told otherwise.
+- Output is Markdown first, HTML/PDF second. No external services.
 
 ## Contributing
 
